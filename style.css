@@ -1,0 +1,954 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+#hNav {
+  z-index: 10000;
+  height: 40px;
+  background-color: #1315a5;
+}
+
+#hNav .nav-link {
+  color: white;
+}
+
+#hNav .dropdown-toggle {
+  color: white;
+}
+
+#hNav .dropdown-menu {
+  background-color: #1315a5;
+}
+#hNav .dropdown-menu .dropdown-item {
+  color: white;
+  background-color: #1315a5;
+}
+
+/* Скрываем на десктопе */
+#navMobile {
+  display: none;
+}
+.call-button {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  /* Убираем все границы */
+  #navMobile .dropdown-menu {
+    border: none !important; /* Убираем рамку меню [[4]] */
+    box-shadow: none !important; /* Убираем тень [[6]] */
+  }
+
+  /* Для отдельных пунктов */
+  #navMobile .dropdown-item {
+    border: 0 !important; /* Сбрасываем границы [[2]] */
+    outline: none !important; /* Убираем фокус [[5]] */
+    padding: 8px 15px !important; /* Регулируем отступы [[3]] */
+  }
+
+  /* Убираем разделители */
+  #navMobile .dropdown-divider {
+    display: none !important; /* Скрываем разделительные линии [[7]] */
+  }
+}
+
+@media (max-width: 767.98px) {
+  #navMobile .nav-link,
+  #navMobile .dropdown-item {
+    color: #1315a5 !important;
+  }
+
+  /* Для активных/наведенных состояний */
+  #navMobile .nav-link:hover,
+  #navMobile .dropdown-item:hover {
+    color: #1315a5 !important;
+  }
+}
+
+/* Показываем на мобильных (max-width: 767.98px) */
+@media (max-width: 767.98px) {
+  #navMobile {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Стилизация выпадающих меню */
+  #navMobile .dropdown-menu {
+    position: static;
+  }
+
+  .navHeadBtn {
+    visibility: hidden;
+  }
+}
+#navbarNav {
+  background-color: white;
+  width: 100%;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  margin-left: 0;
+  text-align: center;
+}
+/* Общие стили для мобильной версии */
+@media (max-width: 767.98px) {
+  #hNav {
+    display: none;
+  }
+  #bNav {
+    display: flex;
+    justify-content: space-between; /* Растягиваем элементы */
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  /* Кнопка вызова (слева) */
+  #bNav .call-button {
+    display: contents;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Логотип (по центру) */
+  #bNav .logo {
+    margin: 0 20px; /* Добавляем отступы для центрирования [[9]] */
+    flex-grow: 1; /* Занимает оставшееся пространство [[6]] */
+    text-align: center;
+  }
+
+  /* Гамбургер (справа) */
+  #bNav .hamburger {
+    /* Последний элемент [[2]][[7]] */
+    background-color: #ff6b00; /* Оранжевый цвет [[5]] */
+  }
+}
+#bNav {
+  z-index: 9999;
+  position: fixed;
+  background-color: white;
+  position: relative;
+  height: 92px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+#Lorem1 {
+  z-index: 1;
+  background: conic-gradient(
+    from -90deg at 71.11% 64.02%,
+    #315de7 0deg,
+    #5185f5 360deg
+  );
+
+  color: white !important;
+  width: 100%;
+  height: 691px;
+  margin-top: -40px;
+  position: relative;
+}
+#contLorem {
+  width: 881px;
+  height: 150px;
+  margin-left: 280px;
+}
+#contLorem h2 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 1.2;
+}
+#contLorem2 {
+  width: 506px;
+  height: 99px;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 280px;
+}
+.btn1 {
+  color: #5d5fef;
+  background-color: #ffffff;
+  width: 290px;
+  height: 60px;
+  margin-top: 200px;
+  margin-left: 280px;
+  border-radius: 39px;
+  border: none;
+}
+#consult1 {
+  margin-left: 25vh;
+}
+#img1 {
+  margin-left: 30vh;
+}
+#img2 {
+  position: absolute;
+  margin-top: -470px;
+  margin-left: 600px;
+  z-index: 10;
+}
+#img3 {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 800px;
+  transform: rotate(-90deg);
+}
+
+#img4 {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  #Lorem1 {
+    z-index: 1;
+    background: conic-gradient(
+      from -90deg at 71.11% 64.02%,
+      #315de7 0deg,
+      #5185f5 360deg
+    );
+
+    color: white !important;
+    width: 100%;
+    height: 691px;
+    margin-top: -40px;
+    position: relative;
+  }
+  #contLorem {
+    margin-left: -1px;
+    width: 100%;
+    max-width: 360px;
+
+    text-align: left;
+  }
+  #contLorem h2 {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-left: 0;
+    word-wrap: break-word;
+  }
+  #contLorem2 {
+    margin-left: -1px;
+    width: 100%;
+    max-width: 360px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  #consult1 {
+    display: none;
+  }
+  #img1 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -150px;
+  }
+  #img2 {
+    display: none;
+  }
+  #img3 {
+    display: none;
+  }
+  #img4 {
+    display: block;
+    position: absolute;
+  }
+  .btn1 {
+    color: white;
+    background-color: #ea7552;
+    width: 200px;
+    height: 44px;
+    margin-top: 100px;
+    margin-left: 200px;
+    border-radius: 39px;
+    border: none;
+  }
+}
+#section2Cont {
+  justify-content: center;
+  text-align: center;
+}
+.card1 {
+  background: conic-gradient(
+    from 270deg at 79.77% 34.81%,
+    #a5a6f6 0deg,
+    #9d9eee 360deg
+  );
+  width: 799px;
+  height: 214px;
+  z-index: 10;
+  border-radius: 22px;
+  color: white;
+  box-shadow: 3px 2px 23px 0px rgba(51, 51, 51, 0.13);
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: -50px;
+  padding-left: 50px;
+  transition: all 0.3s ease; /* Плавные переходы [[3]] */
+}
+
+.card4 {
+  background: conic-gradient(
+    from 270deg at 79.77% 34.81%,
+    #a5a6f6 0deg,
+    #9d9eee 360deg
+  );
+  width: 799px;
+  height: 214px;
+  z-index: 10;
+  border-radius: 22px;
+  color: white;
+  box-shadow: 3px 2px 23px 0px rgba(51, 51, 51, 0.13);
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: -130px;
+  padding-left: 50px;
+}
+
+.card2 {
+  width: 520px;
+  height: 214px;
+  margin-left: 150px;
+  border-radius: 22px;
+  color: #7879f1;
+  box-shadow: 3px 2px 23px 0px rgba(51, 51, 51, 0.13);
+  z-index: 10;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 50px;
+}
+.card3 {
+  width: 520px;
+  height: 214px;
+  border-radius: 22px;
+  color: #7879f1;
+  box-shadow: 3px 2px 23px 0px rgba(51, 51, 51, 0.13);
+  margin-left: -55px;
+  z-index: 10;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 50px;
+}
+.card-title1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.card-title1 span {
+  font-weight: 700;
+  font-size: 48px;
+  padding: 2vh;
+}
+@media (max-width: 767.98px) {
+  /* Контейнер для карточек */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 92px; /* Добавлено отступ для предотвращения перекрытия с фиксированным навбаром */
+  }
+
+  /* Обновление карточек для мобильной версии */
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 100%; /* Сделать карточки на 100% ширины контейнера */
+    height: 181px;
+    margin-left: 0; /* Убираем левые отступы */
+    padding-left: 15px; /* Сужаем внутренний отступ */
+  }
+  .card-title1 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.bgimg1 {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#bgImg1 {
+  position: absolute;
+  opacity: 0.9;
+  z-index: -1;
+  pointer-events: none;
+  top: 70%;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  #bgImg1 {
+    width: 90%;
+    transform: translateY(-50%) rotate(-20deg) scale(1.2);
+    display: none;
+  }
+}
+
+#s3card1 {
+  align-items: center;
+  justify-content: center;
+  background-color: #a752ea;
+  width: 335px;
+  height: 396px;
+  border-radius: 22px;
+  color: white;
+}
+#s3card1 .card-title {
+  margin-top: -220px;
+}
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#s3card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #7879f1;
+  width: 335px;
+  height: 396px;
+  border-radius: 22px;
+  color: white;
+  position: relative; /* Добавлено */
+}
+
+#s3card2 .card-title {
+  margin-top: 100px;
+}
+
+#s3card3 {
+  align-items: center;
+  justify-content: center;
+  background-color: #ef5da8;
+  width: 335px;
+  height: 396px;
+  border-radius: 22px;
+  color: white;
+}
+#s3card3 .card-title {
+  margin-top: -220px;
+}
+
+#s3card4 {
+  align-items: center;
+  justify-content: center;
+  background-color: #526aea;
+  width: 335px;
+  height: 396px;
+  border-radius: 22px;
+  color: white;
+}
+#s3card4 .card-title {
+  margin-top: -220px;
+}
+#s3card5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1787f;
+  width: 335px;
+  height: 396px;
+  border-radius: 22px;
+  color: white;
+  position: relative;
+}
+
+#s3card5 .card-title {
+  margin-top: -220px;
+}
+#s3card6 {
+  align-items: center;
+  justify-content: center;
+  background-color: #ef5de9;
+  width: 335px;
+  height: 396px;
+  border-radius: 22px;
+  color: white;
+}
+#s3card6 .card-title {
+  margin-top: -220px;
+}
+
+.image-circle {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 115px;
+  height: 115px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 20px;
+}
+
+.image-circle img {
+  width: 61px;
+  height: 61px;
+  object-fit: cover;
+}
+
+.card {
+  padding-top: 60px; /* Чтобы круг не перекрывал текст */
+  text-align: center;
+}
+
+#CardTitleText {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  z-index: 10;
+  font-weight: 700;
+  font-size: 22px;
+}
+#CardTitleText2 {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  color: #ef5da8;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.product-card {
+  position: relative;
+  width: 100%;
+  max-width: 378px;
+  height: 565px;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px; /* Автоматический отступ слева и справа, снизу отступ 20px */
+}
+
+.card-image-wrapper {
+  height: 565px;
+  width: 376px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  height: 334px;
+  width: 377px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 25px;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  margin: 0 0 15px;
+  color: #2d3436;
+  font-size: 1.5rem;
+}
+
+.card-description {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+.buttons-row {
+  display: flex;
+  gap: 10px; /* Расстояние между кнопками */
+  flex-wrap: wrap; /* Перенос на новую строку при нехватке места */
+  justify-content: center; /* Выравнивание по центру */
+}
+
+.size-button {
+  display: inline-flex; /* Изменено с flex на inline-flex */
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+  width: 48px;
+  height: 24px;
+  padding: 12px 24px;
+  border: 1px solid #000000;
+  color: #323235;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(93, 95, 239, 0.1);
+  white-space: nowrap;
+}
+
+/* Эффекты при наведении */
+.size-button:hover {
+  background-color: #5d5fef;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(93, 95, 239, 0.2);
+}
+
+/* Для центрирования группы кнопок в контейнере */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .size-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+  }
+
+  .buttons-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap; /* Чтобы кнопки не переносились на следующую строку */
+    justify-content: space-between;
+  }
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ef5da8;
+  margin-top: 1vh;
+}
+
+.card-button {
+  margin-top: 2vh;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  height: 43px;
+  width: 145px;
+  background: #7879f1;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card-button2 {
+  margin-top: 2vh;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  height: 43px;
+  width: 145px;
+  background: white;
+  border-width: 1px;
+  border-color: #7879f1;
+  color: #7879f1;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-button:hover,
+.card-button2:hover {
+  color: white;
+  background: #6869e1;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .card-content {
+    padding: 15px;
+    transform: translateY(30%);
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-price {
+    visibility: hidden;
+  }
+}
+.footCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footCircle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#exampleModal {
+  --text-color: #2d3436;
+  --border-radius: 24px;
+}
+
+#exampleModal .modal-dialog {
+  max-width: 1330px;
+  max-height: 773px;
+}
+
+#exampleModal .modal-content {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+#exampleModal .modal-header {
+  color: white;
+  border-bottom: none;
+
+  position: relative;
+}
+
+#exampleModal .modal-header::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+#exampleModal .modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#exampleModal .modal-body {
+  padding: 2rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+#exampleModal .modal-footer {
+  padding: 1.5rem;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+#exampleModal .btn-close {
+  filter: invert(1);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+#exampleModal .btn-close:hover {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+#exampleModal .btn-primary {
+  background: var(--accent-color);
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  /* Устанавливаем фиксированные размеры модального окна */
+  #exampleModal .modal-dialog {
+    width: 384px; /* Устанавливаем ширину 384px */
+    height: 858px; /* Устанавливаем высоту 858px */
+    margin-top: 15rem;
+    margin: 1rem;
+  }
+
+  /* Добавляем отступы для содержимого окна */
+  #exampleModal .modal-body {
+    overflow: auto; /* Добавляем прокрутку, если содержимое выходит за пределы */
+    padding: 1rem;
+    margin-top: -80px; /* Дополнительные отступы, если нужно */
+  }
+
+  /* Обрезаем изображения в модальном окне */
+  #exampleModal .modal-body img {
+    max-height: 199px; /* Ограничиваем высоту изображения */
+    object-fit: cover; /* Обрезаем изображение, чтобы оно подходило по размеру */
+    object-position: top; /* Выровнять изображение по верхнему краю */
+    width: 100%; /* Устанавливаем ширину 100% от родительского элемента */
+  }
+
+  /* Стили для футера */
+  #exampleModal .modal-footer {
+    flex-wrap: wrap;
+  }
+}
+
+/* Общие стили для модала */
+#orderModal .modal-dialog {
+  width: 761px; /* Ширина для десктопа */
+  height: 612px; /* Высота для десктопа */
+  border-radius: 24px;
+}
+
+#orderModal .modal-content {
+  padding: 20px;
+}
+
+#orderModal .modal-header {
+  border-bottom: none;
+  padding-bottom: 15px;
+}
+
+#orderModal .modal-body {
+  padding: 15px;
+}
+
+#orderModal .modal-body .form-label {
+  font-weight: bold;
+}
+
+#orderModal .form-control {
+  border-radius: 12px;
+  height: 50px;
+}
+
+#orderModal .btn-submit {
+  background-color: #ef5da8;
+  color: white;
+  border-radius: 28px;
+  width: 138px;
+  height: 46px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Montserrat;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Стили при наведении на кнопку */
+#orderModal .btn-submit:hover {
+  background-color: #e1539a;
+}
+
+/* Адаптивность для мобильной версии */
+
+#orderModalLabel {
+  color: #5d5fef;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 48px;
+}
+.modalText1 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  color: #5d5fef;
+}
+#fName {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  color: #5d5fef;
+  text-transform: uppercase;
+}
+#fNomber {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  color: #5d5fef;
+  text-transform: uppercase;
+}
+.fConf {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 9px;
+  color: #5d5fef;
+}
+
+@media (max-width: 768px) {
+  #orderModal .modal-dialog {
+    width: 384px; /* Ширина для мобильной версии */
+    height: 539px; /* Высота для мобильной версии */
+    margin-left: 1rem;
+  }
+
+  #orderModal .modal-body .form-control {
+    height: 40px;
+  }
+
+  #orderModal .btn-submit {
+    height: 46px;
+  }
+  #orderModalLabel {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .modalText1 {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  #fName {
+    font-weight: 400;
+    font-size: 12px;
+
+    text-transform: uppercase;
+  }
+  #fNomber {
+    font-weight: 400;
+    font-size: 12px;
+
+    text-transform: uppercase;
+  }
+  .fConf {
+    font-weight: 300;
+    font-size: 9px;
+  }
+}
