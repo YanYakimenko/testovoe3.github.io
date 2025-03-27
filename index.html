@@ -226,7 +226,7 @@
                   <h5 class="card-title1"><span>01</span>Lorem ipsum</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor
+                    Aenean commodo ligula 
                   </p>
                 </div>
               </div>
@@ -237,7 +237,7 @@
                   <h5 class="card-title1"><span>02</span>Lorem ipsum</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget 
+                    Aenean commodo ligula
                   </p>
                 </div>
               </div>
@@ -248,7 +248,7 @@
                   <h5 class="card-title1"><span>03</span>Lorem ipsum</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget 
+                    Aenean commodo ligula 
                   </p>
                 </div>
               </div>
@@ -259,7 +259,7 @@
                   <h5 class="card-title1"><span>04</span>Lorem ipsum</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget 
+                    Aenean commodo ligula 
                   </p>
                 </div>
               </div>
@@ -436,15 +436,12 @@
                 </div>
               </div>
 
-             
-
-              <!-- Кнопки управления -->
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
           </div>
 
-          <!-- Стилизация -->
+          
           <style>
             .swiper-button-prev,
             .swiper-button-next {
@@ -459,8 +456,8 @@
               align-items: center;
               justify-content: center;
               top: 50%;
-              transform: translateY(-50%); /* Центрируем по вертикали */
-              z-index: 10; /* Чтобы кнопки были над каруселью */
+              transform: translateY(-50%);
+              z-index: 10; 
             }
             @media (max-width: 768px) {
               .swiper-button-prev,
@@ -469,14 +466,12 @@
             }
             }
             
-            /* Стилизация Swiper */
             .swiper {
               width: 100%;
               padding: 30px 0;
               overflow: visible;
             }
             
-            /* Прозрачность неактивных слайдов */
             .swiper-slide {
               opacity: 0.5;
               transition: opacity 0.3s;
@@ -486,17 +481,17 @@
               opacity: 1;
             }
             
-            /* Стрелочки */
+            
             .swiper-button-prev::after,
             .swiper-button-next::after {
-              font-size: 1.8rem; /* Делаем стрелки крупнее */
+              font-size: 1.8rem; 
               color: #5d5fef;
               font-weight: 700;
               transition: all 0.2s ease;
-              line-height: 1; /* Убираем лишние отступы */
+              line-height: 1;
             }
             
-            /* Эффект при наведении */
+            
             .swiper-button-prev:hover,
             .swiper-button-next:hover {
               background: #5d5fef;
@@ -508,7 +503,6 @@
               color: white;
             }
             
-            /* Позиционирование кнопок */
             .swiper-button-prev {
               left: -20px;
             }
@@ -516,7 +510,6 @@
               right: -20px;
             }
             
-            /* Символы стрелок */
             .swiper-button-next::after {
               content: "→";
             }
@@ -525,11 +518,8 @@
               content: "←";
             }
             
-            
-            
           </style>
 
-          <!-- Инициализация Swiper -->
           <script>
             var swiper = new Swiper(".mySwiper", {
               effect: "fade",
@@ -542,7 +532,7 @@
               navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-                disabledClass: "swiper-button-disabled" // Добавляем класс для неактивных состояний
+                disabledClass: "swiper-button-disabled" 
               },
               
             });
@@ -550,20 +540,13 @@
           </script>
         </div>
       </section>
-
-      
-          
-      
     </main>
-    
-
-
-      <!-- Products Section -->
+      
       <section id="products" class="py-5" >
         <div class="container-fluid">
           <h2 class="section-title text-center mb-5">Donec sodales</h2>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <!-- Product Card 1 -->
+           
             <div class="col">
               <div class="product-card">
                 <div class="card-image-wrapper">
@@ -588,7 +571,6 @@
               </div>
             </div>
 
-            <!-- Product Card 2 -->
             <div class="col">
               <div class="product-card">
                 <div class="card-image-wrapper">
@@ -613,7 +595,6 @@
               </div>
             </div>
 
-            <!-- Product Card 3 -->
             <div class="col">
               <div class="product-card">
                 <div class="card-image-wrapper">
@@ -638,7 +619,6 @@
               </div>
             </div>
 
-            <!-- Product Card 4 -->
             <div class="col">
               <div class="product-card">
                 <div class="card-image-wrapper">
@@ -667,11 +647,6 @@
       
       </section>
     </main>
-
-    
-
- 
-
 <!-- Модальное окно -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -682,7 +657,7 @@
       </div>
       <div class="modal-body">
         <div class="row g-4">
-          <!-- Левая колонка - Слайдер -->
+          <!-- Левая колонка -->
           <div class="col-md-4 ">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper ">
@@ -702,7 +677,7 @@
             </div>
           </div>
 
-          <!-- Правая колонка - Контент -->
+          <!-- Правая колонка -->
           <div class="col-md-6">
             <div class="product-details">
               <h3 class="mb-3" id="CardTitleText">Сursus nunc</h3>
@@ -733,7 +708,6 @@
               </div> 
               <div class="price-section">
                 <button class="card-button" data-bs-toggle="modal" data-bs-target="#orderModal">Etiam</button>
-
               </div>
             </div>
           </div>
@@ -742,7 +716,6 @@
     </div>
   </div>
 </div>
-
 <script>
   var swiper = new Swiper(".mySwiper", {
     cssMode: true,
@@ -757,8 +730,7 @@
     keyboard: true,
   });
 </script>
-
-<!-- Order Form Modal -->
+>
 <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" id="orderModalDialog">
     <div class="modal-content">
@@ -766,34 +738,27 @@
         <h5 class="modal-title" id="orderModalLabel">Aenean massa</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
       </div>
-      <div class="modal-body">
-        
+      <div class="modal-body">  
         <p class="modalText1">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque</p>
         <form id="orderForm">
-          <!-- Имя -->
           <div class="mb-3" id="fName">
             <label for="name" class="form-label">имя</label>
             <input type="text" class="form-control" id="name" placeholder="Ваше имя" required>
           </div>
-          <!-- Номер телефона -->
           <div class="mb-3" id="fNomber">
             <label for="phone" class="form-label">Номер телефона</label>
             <input type="tel" class="form-control" id="phone" placeholder="+7 (123) 456-78-90" required>
           </div>
           <p class="fConf">Нажимая кнопку "Записаться", я даю свое согласие на обработку персональных данных и принимаю условия Пользовательского соглашения</p>
-          <!-- Кнопка отправки -->
           <button type="submit" class="btn btn-submit">Etiam</button>
         </form>
       </div>
     </div>
   </div>
 </div>
-
-    
     <footer class="text-white py-5" style="background-color: #1315A5;">
       <div class="container">
         <div class="row g-4">
-          <!-- Секция 1 - Лого + Текст -->
           <div class="col-12 col-lg-3">
             <div class="footer-section d-flex flex-column">
               <div class="footCircle">
@@ -810,8 +775,6 @@
               </div>
             </div>
           </div>
-    
-          <!-- Секция 2 - Список -->
           <div class="col-12 col-lg-3">
             <div class="footer-section">
               <h5>Page</h5>
@@ -822,8 +785,6 @@
               </ul>
             </div>
           </div>
-    
-          <!-- Секция 3 - Карта -->
           <div class="col-12 col-lg-3">
             <div class="footer-section d-flex flex-column h-100">
               <h3 class="mb-3">Maps Location</h3>
@@ -837,87 +798,18 @@
               </iframe>
             </div>
           </div>
-    
-          <!-- Секция 4 - Изображение -->
           <div class="col-12 col-lg-3 position-relative d-flex justify-content-center align-items-center">
             <div class="footer-section" style="min-height: 200px;">
               <img 
-                src="/.img/Frame 34418.png" 
+                src="./img/Frame 34418.png" 
                 alt="Footer Image"
                 class="img-fluid rounded-3 position-absolute bottom-0 end-0 p-3">
             </div>
           </div>
         </div>
       </div>
-
-
-      
     </footer>
     
-    <style>
-    .footCircle {
-      width: 70px;
-      height: 70px;
-      min-width: 70px;
-      border-radius: 50%;
-      background: white;
-      padding: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .social-icon {
-      width: 24px;
-      height: 24px;
-      transition: transform 0.3s;
-    }
-    
-    .social-icon:hover {
-      transform: scale(1.1);
-    }
-    .list-unstyled{
-      margin-top: 65px;
-    }
-    .footer-link {
-      color: white;
-      text-decoration: none;
-      transition: color 0.3s;
-      
-    }
-    
-    .footer-link:hover {
-      color: #17a2b8;
-      padding-left: 8px;
-    }
-    
-    @media (max-width: 992px) {
-      .footer-section {
-        text-align: center;
-        padding: 1.5rem 0;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .footCircle {
-        margin: 0 auto 15px;
-      }
-      @media (max-width: 768px) {
-        .footer-section {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-      
-        .footer-section img {
-          position: static !important; /* Сбрасываем absolute-позиционирование */
-        }
-      }
-      
-    }
-    </style>
-    
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
