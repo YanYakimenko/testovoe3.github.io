@@ -30,8 +30,6 @@ p {
   color: white;
   background-color: #1315a5;
 }
-
-/* Скрываем на десктопе */
 #navMobile {
   display: none;
 }
@@ -40,22 +38,20 @@ p {
 }
 
 @media (max-width: 767.98px) {
-  /* Убираем все границы */
   #navMobile .dropdown-menu {
-    border: none !important; /* Убираем рамку меню [[4]] */
-    box-shadow: none !important; /* Убираем тень [[6]] */
+    border: none !important;
+    box-shadow: none !important;
   }
 
   /* Для отдельных пунктов */
   #navMobile .dropdown-item {
-    border: 0 !important; /* Сбрасываем границы [[2]] */
-    outline: none !important; /* Убираем фокус [[5]] */
-    padding: 8px 15px !important; /* Регулируем отступы [[3]] */
+    border: 0 !important;
+    outline: none !important;
+    padding: 8px 15px !important;
   }
 
-  /* Убираем разделители */
   #navMobile .dropdown-divider {
-    display: none !important; /* Скрываем разделительные линии [[7]] */
+    display: none !important;
   }
 }
 
@@ -64,23 +60,18 @@ p {
   #navMobile .dropdown-item {
     color: #1315a5 !important;
   }
-
-  /* Для активных/наведенных состояний */
   #navMobile .nav-link:hover,
   #navMobile .dropdown-item:hover {
     color: #1315a5 !important;
   }
 }
 
-/* Показываем на мобильных (max-width: 767.98px) */
 @media (max-width: 767.98px) {
   #navMobile {
     display: flex !important;
     flex-direction: column;
     align-items: center;
   }
-
-  /* Стилизация выпадающих меню */
   #navMobile .dropdown-menu {
     position: static;
   }
@@ -97,19 +88,17 @@ p {
   margin-left: 0;
   text-align: center;
 }
-/* Общие стили для мобильной версии */
 @media (max-width: 767.98px) {
   #hNav {
     display: none;
   }
   #bNav {
     display: flex;
-    justify-content: space-between; /* Растягиваем элементы */
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
   }
 
-  /* Кнопка вызова (слева) */
   #bNav .call-button {
     display: contents;
     width: 44px;
@@ -118,17 +107,13 @@ p {
     justify-content: center;
   }
 
-  /* Логотип (по центру) */
   #bNav .logo {
-    margin: 0 20px; /* Добавляем отступы для центрирования [[9]] */
-    flex-grow: 1; /* Занимает оставшееся пространство [[6]] */
+    margin: 0 20px;
+    flex-grow: 1;
     text-align: center;
   }
-
-  /* Гамбургер (справа) */
   #bNav .hamburger {
-    /* Последний элемент [[2]][[7]] */
-    background-color: #ff6b00; /* Оранжевый цвет [[5]] */
+    background-color: #ff6b00;
   }
 }
 #bNav {
@@ -295,7 +280,7 @@ p {
   font-weight: 400;
   margin-left: -50px;
   padding-left: 50px;
-  transition: all 0.3s ease; /* Плавные переходы [[3]] */
+  transition: all 0.3s ease;
 }
 
 .card4 {
@@ -351,25 +336,23 @@ p {
   padding: 2vh;
 }
 @media (max-width: 767.98px) {
-  /* Контейнер для карточек */
   .card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 92px; /* Добавлено отступ для предотвращения перекрытия с фиксированным навбаром */
+    margin-top: 92px;
   }
 
-  /* Обновление карточек для мобильной версии */
   .card1,
   .card2,
   .card3,
   .card4 {
-    width: 100%; /* Сделать карточки на 100% ширины контейнера */
+    width: 100%;
     height: 181px;
-    margin-left: 0; /* Убираем левые отступы */
-    padding-left: 15px; /* Сужаем внутренний отступ */
+    margin-left: 0;
+    padding-left: 15px;
   }
   .card-title1 {
     font-size: 24px;
@@ -391,7 +374,6 @@ p {
   top: 70%;
 }
 
-/* Адаптация для мобильных */
 @media (max-width: 768px) {
   #bgImg1 {
     width: 90%;
@@ -427,7 +409,7 @@ p {
   height: 396px;
   border-radius: 22px;
   color: white;
-  position: relative; /* Добавлено */
+  position: relative;
 }
 
 #s3card2 .card-title {
@@ -471,7 +453,6 @@ p {
   color: white;
   position: relative;
 }
-
 #s3card5 .card-title {
   margin-top: -220px;
 }
@@ -487,7 +468,6 @@ p {
 #s3card6 .card-title {
   margin-top: -220px;
 }
-
 .image-circle {
   position: absolute;
   z-index: 2;
@@ -504,15 +484,13 @@ p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   top: 20px;
 }
-
 .image-circle img {
   width: 61px;
   height: 61px;
   object-fit: cover;
 }
-
 .card {
-  padding-top: 60px; /* Чтобы круг не перекрывал текст */
+  padding-top: 60px;
   text-align: center;
 }
 
@@ -544,7 +522,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 20px; /* Автоматический отступ слева и справа, снизу отступ 20px */
+  margin: 0 auto 20px;
 }
 
 .card-image-wrapper {
@@ -590,13 +568,13 @@ p {
 }
 .buttons-row {
   display: flex;
-  gap: 10px; /* Расстояние между кнопками */
-  flex-wrap: wrap; /* Перенос на новую строку при нехватке места */
-  justify-content: center; /* Выравнивание по центру */
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .size-button {
-  display: inline-flex; /* Изменено с flex на inline-flex */
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
@@ -614,7 +592,6 @@ p {
   white-space: nowrap;
 }
 
-/* Эффекты при наведении */
 .size-button:hover {
   background-color: #5d5fef;
   color: white;
@@ -622,7 +599,6 @@ p {
   box-shadow: 0 4px 15px rgba(93, 95, 239, 0.2);
 }
 
-/* Для центрирования группы кнопок в контейнере */
 .buttons-container {
   display: flex;
   justify-content: center;
@@ -631,7 +607,6 @@ p {
   padding: 20px 0;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .size-button {
     padding: 10px 20px;
@@ -642,7 +617,7 @@ p {
   .buttons-container {
     display: flex;
     gap: 10px;
-    flex-wrap: nowrap; /* Чтобы кнопки не переносились на следующую строку */
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
@@ -801,27 +776,24 @@ p {
 }
 
 @media (max-width: 768px) {
-  /* Устанавливаем фиксированные размеры модального окна */
   #exampleModal .modal-dialog {
-    width: 384px; /* Устанавливаем ширину 384px */
-    height: 858px; /* Устанавливаем высоту 858px */
+    width: 384px;
+    height: 858px;
     margin-top: 15rem;
     margin: 1rem;
   }
 
-  /* Добавляем отступы для содержимого окна */
   #exampleModal .modal-body {
-    overflow: auto; /* Добавляем прокрутку, если содержимое выходит за пределы */
+    overflow: auto;
     padding: 1rem;
-    margin-top: -80px; /* Дополнительные отступы, если нужно */
+    margin-top: -80px;
   }
 
-  /* Обрезаем изображения в модальном окне */
   #exampleModal .modal-body img {
-    max-height: 199px; /* Ограничиваем высоту изображения */
-    object-fit: cover; /* Обрезаем изображение, чтобы оно подходило по размеру */
-    object-position: top; /* Выровнять изображение по верхнему краю */
-    width: 100%; /* Устанавливаем ширину 100% от родительского элемента */
+    max-height: 199px;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
   }
 
   /* Стили для футера */
@@ -830,10 +802,9 @@ p {
   }
 }
 
-/* Общие стили для модала */
 #orderModal .modal-dialog {
-  width: 761px; /* Ширина для десктопа */
-  height: 612px; /* Высота для десктопа */
+  width: 761px;
+  height: 612px;
   border-radius: 24px;
 }
 
@@ -872,12 +843,9 @@ p {
   transition: background-color 0.3s ease;
 }
 
-/* Стили при наведении на кнопку */
 #orderModal .btn-submit:hover {
   background-color: #e1539a;
 }
-
-/* Адаптивность для мобильной версии */
 
 #orderModalLabel {
   color: #5d5fef;
@@ -914,8 +882,8 @@ p {
 
 @media (max-width: 768px) {
   #orderModal .modal-dialog {
-    width: 384px; /* Ширина для мобильной версии */
-    height: 539px; /* Высота для мобильной версии */
+    width: 384px;
+    height: 539px;
     margin-left: 1rem;
   }
 
@@ -950,5 +918,57 @@ p {
   .fConf {
     font-weight: 300;
     font-size: 9px;
+  }
+}
+.footCircle {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  border-radius: 50%;
+  background: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+.social-icon:hover {
+  transform: scale(1.1);
+}
+.list-unstyled {
+  margin-top: 65px;
+}
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-link:hover {
+  color: #17a2b8;
+  padding-left: 8px;
+}
+@media (max-width: 992px) {
+  .footer-section {
+    text-align: center;
+    padding: 1.5rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .footCircle {
+    margin: 0 auto 15px;
+  }
+  @media (max-width: 768px) {
+    .footer-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-section img {
+      position: static !important;
+    }
   }
 }
